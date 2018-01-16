@@ -9,7 +9,7 @@ var getElementsByClassName = function(className) {
   // Look for targetClassName, add it to results array
   // Recursively call func. for each child node with above steps
 
-  results = [];
+  var results = [];
 
   var getElementsByClassNameRecursive = function(className, node) {
     if (node.className !== undefined && node.className.split(" ").indexOf(className) !== -1) {
